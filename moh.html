@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sri Lanka Districts</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link href="css/moh.css" rel="stylesheet" />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+  <body>
+    <div class="container">
+      <h1>Sri Lanka MOH Offices</h1>
+      <div class="form-group">
+        <select id="district" class="form-control sousrce">
+          <option value="">-- Select District --</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="colombo">Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <!-- Add more district options here -->
+        </select>
+      </div>
+      <div id="moh-offices"></div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".sousrce").select2({
+          dropdownCssClass: "show-all-options",
+        });
+      });
+    </script>
+    <script>
+      // Define MOH office details for each district
+      const mohOffices = {
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+        colombo: [
+          { town: "Colombo", contact: "011-1234567" },
+          { town: "Dehiwala", contact: "011-9876543" },
+          // Add more MOH office details for Colombo here
+        ],
+        gampaha: [
+          { town: "Gampaha", contact: "033-1234567" },
+          { town: "Negombo", contact: "031-9876543" },
+          // Add more MOH office details for Gampaha here
+        ],
+      };
+
+      function populateMohOffices() {
+        const districtSelect = document.getElementById("district");
+        const selectedDistrict = districtSelect.value;
+        const mohOfficesContainer = document.getElementById("moh-offices");
+
+        // Clear existing MOH office details
+        mohOfficesContainer.innerHTML = "";
+
+        if (selectedDistrict) {
+          const offices = mohOffices[selectedDistrict];
+          offices.forEach((office) => {
+            const officeDiv = document.createElement("div");
+            officeDiv.className = "moh-office";
+            officeDiv.innerHTML = `<h4>${office.town}:</h4><p>${office.contact}</p>`;
+            mohOfficesContainer.appendChild(officeDiv);
+          });
+        }
+      }
+
+      // Event listener for district selection change
+      document
+        .getElementById("district")
+        .addEventListener("change", populateMohOffices);
+    </script>
+  </body>
+</html>
