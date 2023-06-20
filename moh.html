@@ -16,32 +16,36 @@
 
   <body>
     <div class="container">
+      <button><a href="./index.html">Back</a></button>
       <h1>Sri Lanka MOH Offices</h1>
       <div class="form-group">
         <select id="district" class="form-control sousrce">
           <option value="">-- Select District --</option>
+          <option value="ampara">Ampara</option>
+          <option value="anuradhapura">Anuradhapura</option>
+          <option value="badulla">Badulla</option>
+          <option value="batticalo">Batticalo</option>
           <option value="colombo">Colombo</option>
+          <option value="galle">Galle</option>
           <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
-          <option value="colombo">Colombo</option>
-          <option value="gampaha">Gampaha</option>
+          <option value="hambanthota">Hambanthota</option>
+          <option value="jaffna">Jaffna</option>
+          <option value="kalmunai_area">Kalmunai Area</option>
+          <option value="kandy">Kandy</option>
+          <option value="kilinochchi">Kilinochchi</option>
+          <option value="kegalle">Kegalle</option>
+          <option value="kurunegala">Kurunagala</option>
+          <option value="matale">Matale</option>
+          <option value="monaragala">Monaragala</option>
+          <option value="mannar">Mannar</option>
+          <option value="matara">Matara</option>
+          <option value="mullative">Mulative</option>
+          <option value="nuwara_eliya">Nuwara Eliya</option>
+          <option value="polonnaruwa">Polonnaruwa</option>
+          <option value="puttalam">Puttalam</option>
+          <option value="rathnapura">Rathnapura</option>
+          <option value="trincomalee">Trincomalee</option>
+          <option value="vavuniya">Vavuniya</option>
           <!-- Add more district options here -->
         </select>
       </div>
@@ -57,76 +61,409 @@
     <script>
       // Define MOH office details for each district
       const mohOffices = {
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+        ampara: [
+          { town: "Ampara", contact: "+94 632 222 279         workinh hours 8.00am to 3.00pm" },
+          { town: "Damana", contact: "+94 632 240 420" },
+          { town: "Lahugala", contact: "+946 33 634 677" },
+          { town: "Mahaoya", contact: "+94 632 244 098" },
+          { town: "Padiyathalawa", contact: "+94 632 246 012" },
+          { town: "Uhana", contact: "+94 633 634 687" },
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        anuradhapura: [
+          { town: "Galinbidinuwewa", contact: "+94 252 258 384" },
+          { town: "Galnewa", contact: "+94 252 269 526" },
+          { town: "Horowpothana", contact: "+94 253 852 820" },
+          { town: "Ipalogama", contact: "+94 252 264 156" },
+          { town: "Kahatagasdigililiya", contact: "+94252247478" },
+          { town: "Kebithigollewa", contact: "+94 252 298 530" },
+          { town: "Kekirawa", contact: "+94 252 264 278" },
+          { town: "Madawachchiya", contact: "+94 252 245 717" },
+          { town: "Mihintale", contact: "+94 252 266 562" },
+          { town: "Nochchiyagama", contact: "+94 252 257 856" },
+          { town: "Nuwaragam Palatha - Central", contact: "+94 252 223 400" },
+          { town: "Nuwaragam Palatha - East", contact: "+94 252 222 278" },
+          { town: "Padaviya", contact: "+94 253 854 850" },
+          { town: "Palagala", contact: "+94 253 854 850" },
+          { town: "Rajanganaya", contact: "+94255674454" },
+          { town: "Rambewa", contact: "+94 255 673 537" },
+          { town: "Thabuththegama", contact: "+94 252 276 932" },
+          { town: "Thalawa", contact: "+94 252 276 133" },
+          { town: "Thirappane", contact: "+94 255 670 256" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+        badulla: [
+          { town: "Badulla", contact: "+94 552 222 278" },
+          { town: "Bandarawela", contact: "+94 572 222 278" },
+          { town: "Ella", contact: "+94 572 228 853" },
+          { town: "Girandurukotte", contact: "+94 272 254 051" },
+          { town: "Hali Ela", contact: "+94 552 294 378" },
+          { town: "Haputale", contact: "+94 552 229 214" },
+          { town: "Kandaketiya", contact: "+94 552 245 672" },
+          { town: "Mahiyangana", contact: "+94 552 257 262" },
+          { town: "Paranagama", contact: "+94 572 246 342" },
+          { town: "Passara", contact: "+94 552 288 178" },
+          { town: "Welimada", contact: "+94 572 245 178" },
+          // Add more MOH office details for Colombo here
+        ],
+        batticalo: [
+          { town: "Arayampathy", contact: "+94 653 657 518" },
+          { town: "Batticalo", contact: "+94 652 222 278" },
+          { town: "Chenkalady", contact: "+94 652 240 526" },
+          { town: "Eravur", contact: "+94 652 241 225" },
+          { town: "Kaluwanchikudy", contact: "+94 652 250 065" },
+          { town: "Kattankudy", contact: "+94 652 246 161" },
+          { town: "Odamavadi", contact: "+94 652 258 104" },
+          { town: "Paddippalai", contact: "+94 653 656 573" },
+          { town: "Vakarai", contact: "+94 653 656 352" },
+          { town: "Valaichchenai", contact: "+94 652 257 260" },
+          { town: "Vavunathevu", contact: "+94 653 656 353" },
+          { town: "Vellavely", contact: "+94 653 656 359" },
           // Add more MOH office details for Gampaha here
         ],
         colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+          { town: "Boralesgamuwa", contact: "+94 115 524 450" },
+          { town: "Dehiwala", contact: "+94 112 723 290" },
+          { town: "Hanwella", contact: "+94 362 253 502" },
+          { town: "Homagama", contact: "+94 112 855 244" },
+          { town: "Kaduwela", contact: "+94 112 571 4633" },
+          { town: "Kolonnawa", contact: "+94 112 411 281" },
+          { town: "Maharagama", contact: "+94 112 843 588" },
+          { town: "Moratuwa", contact: "+94 112 645 483" },
+          { town: "Nugegoda", contact: "+94 112 852 718" },
+          { town: "Padukka", contact: "+94 112 859 497" },
+          { town: "Piliyandalaa", contact: "+94 112 708 553" },
+          { town: "Pittakotte", contact: "+94 112 862 973" },
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        galle: [
+          { town: "Ambalangoda", contact: "+94 912 258 278" },
+          { town: "Akmeemana", contact: "+94 913 922 261" },
+          { town: "Baddegama", contact: "+94 912 292 278" },
+          { town: "Balapitiya / Ahungalle", contact: "+94 912 264 485" },
+          { town: "Bope - Poddala", contact: "+94 912 222 442" },
+          { town: "Elpitiya", contact: "+94 912 291 102" },
+          { town: "Galle MC", contact: "+94 912 234 378" },
+          { town: "Gonapeenuwala", contact: "+94 913 784 614" },
+          { town: "Habaraduwa", contact: "+94 912 283 850" },
+          { town: "Hikkaduwa", contact: "+94 912 277 508" },
+          { town: "Induruwa", contact: "-" },
+          { town: "Imaduwa", contact: "+94 912 286 534" },
+          { town: "Karandeniya", contact: "+94 912 291 766" },
+          { town: "Neluwa", contact: "+94 913 783 320" },
+          { town: "Niyagama", contact: "+94 912 296 526" },
+          { town: "Thawalama", contact: "+94 913 783 761" },
+          { town: "Udugama", contact: "+94 912 285 170" },
+          { town: "Welivitiya", contact: "+94 912 261 904" },
+          { town: "Yakkalamulla", contact: "+94 913 938 615" },
           // Add more MOH office details for Gampaha here
         ],
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+        gampaha: [
+          { town: "Attanagalla", contact: "+94 332 287 278" },
+          { town: "Biyagama", contact: "+94 112 489 785" },
+          { town: "BOI - Katunayaka", contact: "+ 94 112 256 256" },
+          { town: "Divulapitiya", contact: "+94 312 246 007" },
+          { town: "Dompe", contact: "+94 112 404 769" },
+          { town: "Gampaha", contact: "+94 332 222 278" },
+          { town: "Jaela", contact: "+ 94 112 237 525" },
+          { town: "Katana", contact: "+94 312 238 490" },
+          { town: "Kelaniya", contact: "+94 112 914 782" },
+          { town: "Mahara", contact: "+94 112 973 506" },
+          { town: "Minuwangoda", contact: "+94 112 295 278" },
+          { town: "Mirigama", contact: "+94 332 273 278" },
+          { town: "Negombo", contact: "+94 312 224 467" },
+          { town: "Ragama", contact: "+94 112 958 035" },
+          { town: "Seeduwa", contact: "+94 113 062 396" },
+          { town: "Wattala", contact: "+94 112 933 212" },
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        hambanthota: [
+          { town: "Ambalanthota", contact: "+94 472 225 053" },
+          { town: "Angunakolapalessa", contact: "+94 472 228 261" },
+          { town: "Beliatta", contact: "+94 472 243 718" },
+          { town: "Hambantota", contact: "+94 472 256 561" },
+          { town: "Katuwana", contact: "+94 472 247 361" },
+          { town: "Lunugamvehera", contact: "+94 472 238 014" },
+          { town: "Okewela", contact: "-" },
+          { town: "Sooriyawewa", contact: "+94472289+9462" },
+          { town: "Tangalle", contact: "+94 472 240 278" },
+          { town: "Tissamaharama", contact: "+94 472 237 184" },
+          { town: "Walasmulla", contact: "+94 472 245 278" },
+          { town: "Weerakatiya", contact: "+94 473 486 480" },
           // Add more MOH office details for Gampaha here
         ],
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+        jaffna: [
+          { town: "Chankanai", contact: "+94 213 213 614" },
+          { town: "Chawacachcheri", contact: "+94 212 270 014" },
+          { town: "Jaffna", contact: "+94 212 222 645" },
+          { town: "Karaveddy", contact: "+94 213 207 153" },
+          { town: "Kayts", contact: "+94 213 213 588" },
+          { town: "Kopay", contact: "+94 213 213 615" },
+          { town: "Nallur", contact: "+94 213 207 155" },
+          { town: "Point Pedro", contact: "+94 212 264 482" },
+          { town: "Sandilipay", contact: "+94 212 255 248" },
+          { town: "Uduvil", contact: "+94 212 241 183" },
+          { town: "Nallur", contact: "+94 213 707 155" },
+
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        kalmunai_area: [
+          { town: "Adalaichchenai", contact: "+94 672 278 613" },
+          { town: "Akkaraipatthu", contact: "+94 672 277 431" },
+          { town: "Alayadivembu", contact: "+94 672 277 528" },
+          { town: "Irkkamam", contact: "+94 771 139 672" },
+          { town: "Kalmunai North", contact: "+94 672 229 278" },
+          { town: "Kalmunai Southo", contact: "+94 672 223 266" },
+          { town: "Karaitivu", contact: "+94 672 221 981" },
+          { town: "Nintavur", contact: "+94 672 250 834" },
+          { town: "Potthuvil", contact: "+94 632 248 502" },
+          { town: "Sainthamaruthu", contact: "+94 673 671 711" },
+          { town: "Sammanthurai", contact: "+94 672 260 808" },
+          { town: "Thirukkovil", contact: "+94 632 265 054" },
           // Add more MOH office details for Gampaha here
         ],
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+        kandy: [
+          { town: "Akurana", contact: "+94 662 244 054" },
+          { town: "Bambaradeniya", contact: "+94 812 315 732" },
+          { town: "Doluwa", contact: "+94 814 940 123" },
+          { town: "Galagedara", contact: "+94 812 461 368" },
+          { town: "Galaha", contact: "+94 812 467 601" },
+          { town: "Ganga Ihala Koralea", contact: "+94 812 352 803" },
+          { town: "Gangawatakorale / Tennekumbura", contact: "+94 812 240 047" },
+          { town: "Harispattuwa", contact: "+94 812 499 317" },
+          { town: "Hasalaka", contact: "+94 552 25 7078" },
+          { town: "Hatharaliyadda", contact: "+94 813 823 628" },
+          { town: "Kadugannawa", contact: "+94 812 571 252" },
+          { town: "Kundasale", contact: "+94 812 374 012" },
+          { town: "Manikhinna", contact: "+94 813 755 825" },
+          { town: "Medadumbara", contact: "+94 812 402 457" },
+          { town: "Nawalapitiya", contact: "+94 542 222 278" },
+          { town: "Panvila", contact: "+94 812 472 031" },
+          { town: "Thalatuoya", contact: "+94 812 404 278" },
+          { town: "Poojapitiya", contact: "+94 812 307 018" },
+          { town: "Udadumbara", contact: "+94 812 402 381" },
+          { town: "Udapalatha Gampala", contact: "+94 812 352 278" },
+          { town: "Udunuwara", contact: "+94 812 315 732" },
+          { town: "Waththegama", contact: "+94 812 476 262" },
+          { town: "Yatinuwara", contact: "+94 812 571 252" },
+
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        kaluthara: [
+          { town: "Agalawatta", contact: "+94 343 442 752" },
+          { town: "Bandaragama", contact: "+94 382 290 154" },
+          { town: "Bulathsinhala", contact: "+94 342 283 158" },
+          { town: "Horana", contact: "+94 342 261 278" },
+          { town: "Ingiriya", contact: "-" },
+          { town: "Kalutara", contact: "-" },
+          { town: "Madurawala", contact: "+94 342 251 527" },
+          { town: "Mathugama", contact: "+94 342 247 278" },
+          { town: "Palindanuwara", contact: "+94 342 244 478" },
+          { town: "Panadura", contact: "+94 382 232 278" },
+          { town: "Walallawita", contact: "+94 342 284 456" },
+
           // Add more MOH office details for Gampaha here
         ],
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
+        kegalle: [
+          { town: "Aranayake", contact: "+94 352 258 161" },
+          { town: "Bulathkohupitiya", contact: "+94 363 364 745" },
+          { town: "Dehiovita", contact: "+94 362 267 415" },
+          { town: "Deraniyagala", contact: "+94 362 249 372" },
+          { town: "Galigamuwa", contact: "+94 352 283 390" },
+          { town: "Kegalle", contact: "+94 352 222 278" },
+          { town: "Mawanella", contact: "+94 352 246 335" },
+          { town: "Rambukkana", contact: "+94 352 265 278" },
+          { town: "Ruwanwella", contact: "+94 362 266 278" },
+          { town: "Warakapola", contact: "+94 352 267 278" },
+          { town: "Yatiyantota", contact: "+94 362 271 682" },
           // Add more MOH office details for Colombo here
         ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+        kilinochchi: [
+          { town: "Kilinochchi", contact: "+94 213 208 739" },
+          { town: "Pallai", contact: "+94 243 247 239" },
+          { town: "Poonakary", contact: "+94 213 208 738" },
+
           // Add more MOH office details for Gampaha here
         ],
-        colombo: [
-          { town: "Colombo", contact: "011-1234567" },
-          { town: "Dehiwala", contact: "011-9876543" },
-          // Add more MOH office details for Colombo here
-        ],
-        gampaha: [
-          { town: "Gampaha", contact: "033-1234567" },
-          { town: "Negombo", contact: "031-9876543" },
+
+        kurunegala: [
+          { town: "Alauwa", contact: "+94 372 278 840" },
+          { town: "Bingiriya", contact: "+94 322 246 163" },
+          { town: "Galgamuwa", contact: "+94 372 253 329" },
+          { town: "Ganewatta", contact: "+94 372 264 042" },
+          { town: "Giribawa", contact: "-" },
+          { town: "Ibbagamuwa", contact: "+94 372 250 578" },
+          { town: "Katupotha", contact: "+94 373 612 908" },
+          { town: "Kotawehera", contact: "+94 373 971 464" },
+          { town: "Kuliyapitiya West", contact: "+94 372 281 278" },
+          { town: "Kurunegala", contact: "+94 372 222 194" },
+          { town: "Maho", contact: "+94 372 275 262" },
+          { town: "Mawathagama", contact: "+94 372 299 223" },
+          { town: "Narammala", contact: "+94 372 249 278" },
+          { town: "Nikaweratiya", contact: "+94 372 260 303" },
+          { town: "Panduwasnuwara", contact: "+94 372 229 114" },
+          { town: "Pannala", contact: "+94 372 246 063" },
+          { town: "Polgahawela", contact: "+94 372 243 278" },
+          { town: "Polpitigama", contact: "+94 372 273 258" },
+          { town: "Rideegama", contact: "+94 372 252 321" },
+          { town: "Udubaddawa", contact: "+94 373 981 408" },
+          { town: "Wariyapola", contact: "+94 372 267 279" },
+
           // Add more MOH office details for Gampaha here
         ],
+
+        matale: [
+          { town: "Abanganga", contact: "+94 662 255 278" },
+          { town: "Dambulla", contact: "+94 662 284 778" },
+          { town: "Galewela", contact: "+94 662 289 264" },
+          { town: "Laggala / Pallegama", contact: "+94 662 275 025" },
+          { town: "Matale", contact: "+94 662 231 520" },
+          { town: "Naula", contact: "+94 662 246 102" },
+          { town: "Pallepola", contact: "+94 662 247 341" },
+          { town: "Ukuwela", contact: "+94 662 222 278" },
+          { town: "Wilgamuwa", contact: "+94 662 250 060" },
+          { town: "Yatawatta", contact: "+94 662 221 068" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        monaragala: [
+          { town: "Badulkumbura", contact: "+94 552 250 120" },
+          { town: "Bibile", contact: "+94 552 265 478" },
+          { town: "Buttala", contact: "+94 552 273 775" },
+          { town: "Katharagama", contact: "+94 472 236 080" },
+          { town: "Madagama", contact: "+94 553 561 032" },
+          { town: "Madulla", contact: "+94 553 552 212" },
+          { town: "Monaragala", contact: "+94 552 276 178" },
+          { town: "Sewanagala", contact: "+94 718 201 583" },
+          { town: "Siyambalanduwa", contact: "+94 553 561 031" },
+          { town: "Thanamalwila", contact: "031-9876543" },
+          { town: "Wellawaya", contact: "+94 552 274 961" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+        mannar: [
+          { town: "Adampan", contact: "-" },
+          { town: "Madhu", contact: "-" },
+          { town: "Mannar", contact: "+94 232 222 278" },
+          { town: "Murunkan", contact: "+94 232 050 389" },
+          { town: "Musali", contact: "+94 233 230 581" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        matara: [
+          { town: "Akuressa", contact: "+94 412 284 412" },
+          { town: "Athuraliya", contact: "+94 412 284 048" },
+          { town: "Devinuara", contact: "+94 412 226 763" },
+          { town: "Dickwella", contact: "+94 412 255 100" },
+          { town: "Hakmana", contact: "+94 412 286 578" },
+          { town: "Kamburupitiya", contact: "+94 412 292 559" },
+          { town: "Kirinda/Puhulwella", contact: "+94 412 288 261" },
+          { town: "Kotapola", contact: "+94 412 273 717" },
+          { town: "Malimbada", contact: "+94 412 240 428" },
+          { town: "Matara", contact: "+94 412 222 278" },
+          { town: "Morawaka", contact: "+94 412 282 376" },
+          { town: "Mulatiyana", contact: "+94 412 268 387" },
+          { town: "Pasgoda", contact: "+94 412 272 332" },
+          { town: "Thihagoda", contact: "+94 412 245 755" },
+          { town: "Weligama", contact: "+94 412 250 278" },
+          { town: "Welinitiya", contact: "+94 415 671 674" },
+
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        mullative: [
+          { town: "Mallavi", contact: "+94 243 248 287" },
+          { town: "Mullaitivu", contact: "-" },
+          { town: "Oddusuddano", contact: "+94 243 248 351" },
+          { town: "Puthukudyirrupu", contact: "-" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+
+
+        nuwara_eliya: [
+          { town: "Ambagamuwa", contact: "+94 512 242 278" },
+          { town: "Hanguranketha", contact: "+94 812 365 292" },
+          { town: "Kotagala", contact: "+94 523 525 111" },
+          { town: "Kothmale", contact: "+94 522 259 627" },
+          { town: "Maskeliya", contact: "+94 522 277 586" },
+          { town: "Nawathispane", contact: "+94 523 525 110" },
+          { town: "Nuwara - Eliya", contact: "+94 522 222 278" },
+          { town: "Rikillagaskada", contact: "+94 812 365 292" },
+          { town: "Thalawakela(Lindula)", contact: "+94 522 258 824" },
+          { town: "Walapane", contact: "+94 522 279 136" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        polonnaruwa: [
+          { town: "Dimbulagala", contact: "+94 272 223 239" },
+          { town: "Elehara", contact: "+94 662 256 624" },
+          { town: "Hingurakgoda", contact: "+94 272 246 261" },
+          { town: "Lankapura", contact: "+94 273 272 103" },
+          { town: "Medirigiriya", contact: "+94 272 248 261" },
+          { town: "Thamankaduwa", contact: "+94 272 222 209" },
+          { town: "Walikanda", contact: "+94 272 259 082" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        puttalam: [
+          { town: "Anamaduwa", contact: "+94 322 263 447" },
+          { town: "Arachchikattuwa", contact: "-" },
+          { town: "Chillaw", contact: "+94 322 222 278" },
+          { town: "Dankotuwa", contact: "+94 312 258 178" },
+          { town: "Kalpitiya", contact: "+94 322 260 840" },
+          { town: "Karuwalagaswewa", contact: "+94 322 265 154" },
+          { town: "Marawila", contact: "+94 322 254 278" },
+          { town: "Mundal", contact: "+94 322 224 278" },
+          { town: "Puttalam", contact: "+94 322 265 201" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        rathnapura: [
+          { town: "Ayagama", contact: "+94 452 250 160" },
+          { town: "Balangoda", contact: "+94 452 287 278" },
+          { town: "Eheliyagoda", contact: "+94 362 258 278" },
+          { town: "Elapatha", contact: "+94 452 222 516" },
+          { town: "Kiriella", contact: "+94 453 467 413" },
+          { town: "Kolonna", contact: "+94 452 260 262" },
+          { town: "Kuruwita", contact: "+94 452 262 1743" },
+          { town: "Nivithigala", contact: "+94 452 279 844" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        trincomalee: [
+          { town: "Gomarangadawela", contact: "+94 264 921 439" },
+          { town: "Ichchilampathai", contact: "+94 263 268 756" },
+          { town: "Kanthali", contact: "+94 262 234 265" },
+          { town: "Kinniya", contact: "+94 262 236 263" },
+          { town: "Kuchchaveli", contact: "+94 263 267 464" },
+          { town: "Muthur", contact: "+94 262 238 262" },
+          { town: "Padavi Sripura", contact: "+94 252 255 083" },
+          { town: "Seruwila", contact: "+94 263 263 019" },
+          { town: "Thampalagamam", contact: "+94 262 248 063" },
+          { town: "Trincomalee", contact: "+94 262 222 278" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
+        vavuniya: [
+          { town: "Vavuniya", contact: "+94 242 222 278" },
+          { town: "Cheddikulam", contact: "+94 242 260 968" },
+          { town: "Vavuniya North", contact: "-" },
+          { town: "Vavuniya South", contact: "+94 242 223 591" },
+
+          // Add more MOH office details for Gampaha here
+        ],
+
       };
 
       function populateMohOffices() {
