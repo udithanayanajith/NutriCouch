@@ -49,7 +49,16 @@
           <!-- Add more district options here -->
         </select>
       </div>
-      <div id="moh-offices"></div>
+
+      <div id="div1" style="height: 380px; position: relative;">
+        <div id="div2" style="max-height: 100%; overflow: auto;">
+          <div id="div3" style="height: 1500px;">
+            <div id="moh-offices"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <div id="moh-offices"></div> -->
     </div>
     <script>
       $(document).ready(function () {
@@ -62,7 +71,10 @@
       // Define MOH office details for each district
       const mohOffices = {
         ampara: [
-          { town: "Ampara", contact: "+94 632 222 279         workinh hours 8.00am to 3.00pm" },
+          {
+            town: "Ampara",
+            contact: "+94 632 222 279",
+          },
           { town: "Damana", contact: "+94 632 240 420" },
           { town: "Lahugala", contact: "+946 33 634 677" },
           { town: "Mahaoya", contact: "+94 632 244 098" },
@@ -230,7 +242,10 @@
           { town: "Galagedara", contact: "+94 812 461 368" },
           { town: "Galaha", contact: "+94 812 467 601" },
           { town: "Ganga Ihala Koralea", contact: "+94 812 352 803" },
-          { town: "Gangawatakorale / Tennekumbura", contact: "+94 812 240 047" },
+          {
+            town: "Gangawatakorale / Tennekumbura",
+            contact: "+94 812 240 047",
+          },
           { town: "Harispattuwa", contact: "+94 812 499 317" },
           { town: "Hasalaka", contact: "+94 552 25 7078" },
           { town: "Hatharaliyadda", contact: "+94 813 823 628" },
@@ -371,7 +386,6 @@
           { town: "Weligama", contact: "+94 412 250 278" },
           { town: "Welinitiya", contact: "+94 415 671 674" },
 
-
           // Add more MOH office details for Gampaha here
         ],
 
@@ -383,8 +397,6 @@
 
           // Add more MOH office details for Gampaha here
         ],
-
-
 
         nuwara_eliya: [
           { town: "Ambagamuwa", contact: "+94 512 242 278" },
@@ -463,7 +475,6 @@
 
           // Add more MOH office details for Gampaha here
         ],
-
       };
 
       function populateMohOffices() {
