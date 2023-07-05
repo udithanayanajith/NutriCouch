@@ -23,6 +23,7 @@ h5,
 h6 {
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
+  color: #000;
 }
 a {
   color: #45aed6;
@@ -659,7 +660,7 @@ color:#fff;
 	font-size: 14px;
 	background: rgba(0, 0, 0, 0.39);
 
-	color: #919191;
+	color: #ffffff;
 line-height: 22px;
 
 	border-radius: 20px;
