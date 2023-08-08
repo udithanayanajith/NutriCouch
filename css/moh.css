@@ -4,7 +4,7 @@ body {
   background-size: auto;
   background-image: url("../images/moh.jpg");
 }
-.container {
+.detailcontainer {
   background-color: #aca4b9;
   padding: 30px;
   opacity: 0.86;

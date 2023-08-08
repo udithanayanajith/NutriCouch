@@ -15,7 +15,12 @@ function getBotResponse(userMessage) {
     })
     .then(function (data) {
       var botResponse = data.response;
-      appendMessage(botResponse, "bot");
+      if (botResponse === "pred1Sivere") {
+        appendMessage("This is your advices", "bot");
+        showPdf();
+      } else {
+        appendMessage(botResponse, "bot");
+      }
     })
     .catch(function (error) {
       console.log("Error:", error);
@@ -43,3 +48,19 @@ userInput.addEventListener("keydown", function (event) {
     sendMessage();
   }
 });
+
+function showPdf() {
+  var chatMessages = document.getElementById("chat-messages");
+  var pdfContainer = document.createElement("div");
+  pdfContainer.classList.add("chat-message");
+  pdfContainer.classList.add("bot-message");
+
+  var pdfEmbed = document.createElement("iframe");
+  pdfEmbed.src = "sample.pdf";
+  pdfEmbed.width = "100%";
+  pdfEmbed.height = "600px";
+
+  pdfContainer.appendChild(pdfEmbed);
+  chatMessages.appendChild(pdfContainer);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
